@@ -1,0 +1,7 @@
+Metadata-Version: 2.2
+Name: sphinx_rapidoc
+Version: 0.1
+Summary: Custom Sphinx extension for embedding RapiDoc
+Requires-Dist: sphinx
+Dynamic: requires-dist
+Dynamic: summary

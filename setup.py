@@ -7,6 +7,7 @@ setup(
     packages=find_packages(),
     include_package_data=True,
     zip_safe=False,
+    url="https://github.com/TirthS24/sphinx_rapidoc",
     install_requires=[
         'sphinx',
     ],

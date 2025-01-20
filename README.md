@@ -35,7 +35,7 @@ RapiDoc powered OpenAPI spec renderer for Sphinx.
 *Endpoint and Authentication sections*
 
 ![Sample POST Request](./utils/request.png)
-*Sample POST Request*
+*Sample GET Request*
 
 ## Requirements
 - Python version **3.9** and above to install all the dependent packages.

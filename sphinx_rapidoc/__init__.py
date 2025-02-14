@@ -13,7 +13,7 @@ class RapiDocDirective(Directive):
 
     def run(self) -> list:
         spec_url: str = self.options.get('spec-url', '')
-        theme: str = self.options.get('theme', 'dark')
+        theme: str = self.options.get('theme', 'light')
         render_style: str = self.options.get('render-style', 'view')
 
         # Generate HTML node

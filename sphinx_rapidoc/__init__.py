@@ -21,11 +21,11 @@ class RapiDocDirective(Directive):
             f'<rapi-doc '
             f'spec-url="{spec_url}" '
             f'theme="{theme}" '
-            f'render-style="{render_style}">'
-            'primary-color = "#f54c47"'
-            'bg-color = "#2e3746"'
-            'text-color = "#bacdee"'
-            'show-header = "false"'
+            f'render-style="{render_style}" '
+            'primary-color="#f54c47" '
+            'bg-color="#2e3746" '
+            'text-color="#bacdee" '
+            'show-header="false">'
             f'</rapi-doc>'
         )
         return [nodes.raw('', html, format='html')]

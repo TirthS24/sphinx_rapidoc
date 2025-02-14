@@ -24,8 +24,7 @@ class RapiDocDirective(Directive):
             f'render-style="{render_style}" '
             'primary-color="#f54c47" '
             'bg-color="#2e3746" '
-            'text-color="#bacdee" '
-            'show-header="false">'
+            'text-color="#bacdee">'
             f'</rapi-doc>'
         )
         return [nodes.raw('', html, format='html')]

@@ -4,29 +4,33 @@ from sphinx.util.fileutil import copy_asset
 import os
 
 class RapiDocDirective(Directive):
-    has_content = False
-    option_spec = {
+    has_content: bool = False
+    option_spec: dict = {
         'spec-url': str,
         'theme': str,
         'render-style': str,
     }
 
-    def run(self):
-        spec_url = self.options.get('spec-url', '')
-        theme = self.options.get('theme', 'light')
-        render_style = self.options.get('render-style', 'read')
+    def run(self) -> list:
+        spec_url: str = self.options.get('spec-url', '')
+        theme: str = self.options.get('theme', 'dark')
+        render_style: str = self.options.get('render-style', 'view')
 
         # Generate HTML node
-        html = (
+        html: str = (
             f'<rapi-doc '
             f'spec-url="{spec_url}" '
             f'theme="{theme}" '
             f'render-style="{render_style}">'
+            'primary-color = "#f54c47"'
+            'bg-color = "#2e3746"'
+            'text-color = "#bacdee"'
+            'show-header = "false"'
             f'</rapi-doc>'
         )
         return [nodes.raw('', html, format='html')]
 
-def setup(app):
+def setup(app) -> dict:
     # Register the directive
     app.add_directive('rapidoc', RapiDocDirective)
 

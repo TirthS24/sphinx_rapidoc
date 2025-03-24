@@ -105,7 +105,7 @@ pip install git+https://github.com/TirthS24/sphinx_rapidoc
 ## Requirements
 
 - Python 3.9 or higher
-- Sphinx 2.0 or higher
+- Sphinx 7.2.5 or higher
 - Valid OpenAPI/Swagger specification (JSON or YAML format)
 - Web browser with JavaScript enabled
 
